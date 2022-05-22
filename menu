@@ -1,0 +1,63 @@
+import webbrowser
+
+class motocicletas:
+
+    def __init__(self, nombre, marca, potencia):
+       self.nombre = nombre
+       self.marca = marca
+       self.potencia = potencia
+
+    def __str__(self):
+         return (f"{self.nombre}" 
+         f" {self.marca}  {self.potencia}")
+
+
+
+harleyWester = motocicletas("harleyWester", "harleyDavidson", "800cv")   
+
+Yamaha500 = motocicletas("yamaha500", "Yamaha", "500cv")
+
+hondavenon = motocicletas("hondavenon", "Honda", "1200cv")
+
+apriliashadow = motocicletas("apriliashadow", "Aprilia", "850cv")
+
+harley_sporter = motocicletas("harley_sporter", "harleyDavidson", "550cv")
+
+Vespa_candy = motocicletas("vespa_candy", "vespa", "250cv")
+
+
+menu = """
+
+
+[1] harleywester
+[2] Yamaha500
+[3] hondavenon
+[4] apriliashadow
+[5] harley_sporter
+[6] vespa_candy
+
+"""
+
+print(menu)
+
+opcion =input('seleciona vehiculo')
+
+if opcion == '1':
+    print(harleyWester)
+    webbrowser.open("https://motosnuevas.formulamoto.es/galeria/5086/Harley-Davidson_Fat_Boy_114.jpg")
+
+   
+if opcion == '2':
+    print(Yamaha500)
+
+if opcion == '3':
+    print(harleys_porter)
+
+if opcion == '4':
+    print(apriliashadow)
+
+if opcion == '5':
+    print(harley_sporter)
+
+if opcion == '6':
+    print(Vespa_candy)
